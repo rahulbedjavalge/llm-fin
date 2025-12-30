@@ -42,3 +42,20 @@ class AnalyzeResponse(BaseModel):
     agreement: bool
     ratios: Ratios
     red_flags: RedFlags
+
+
+class MetricsHistory(BaseModel):
+    timestamp: str
+    ticker: Optional[str] = None
+    period: Optional[str] = None
+    ratios: Ratios
+    llm_direction: str
+    baseline_direction: str
+    agreement: bool
+
+
+class ComparisonMetrics(BaseModel):
+    metric_name: str
+    current_value: float
+    previous_value: Optional[float] = None
+    change_percent: Optional[float] = None
