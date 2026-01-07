@@ -59,12 +59,6 @@ python scripts/evaluate.py
 - Outputs include simple uncertainty suggestions (risk levels via leverage heuristics).
 - Prompts/providers should explicitly avoid demographic attributes in decisioning.
 
-## Research Hook (for LinkedIn)
-- Inspired by recent work exploring LLMs for financial statement analysis and comparisons to ML baselines on structured fundamentals; and by studies auditing explanation faithfulness (e.g., SHAP) in credit/risk.
-
-## LinkedIn Draft
-"Built a research-aligned LLM copilot that ingests standardized financial statements, computes key ratios, predicts earnings direction/risk, and explains the rationale—benchmarked against a simple logistic regression baseline. Stack: FastAPI + React + scikit-learn. Includes a tiny evaluation pipeline and a synthetic case (Company X)."
-
 ## Next Steps
 - Swap heuristic LLM with a real provider (env-configured adapter in backend/llm.py).
 - Add SHAP comparisons for baseline and expand datasets.
